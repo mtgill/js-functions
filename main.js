@@ -33,5 +33,23 @@ const dogBreedPrinter = (dogBreed) => {
 
 console.log(dogBreedPrinter("Lab"));
 
-let dogBreed = prompt("What is your favorite dog breed?");
-console.log(dogBreedPrinter(dogBreed));
+//let dogBreed = prompt("What is your favorite dog breed?");
+//console.log(dogBreedPrinter(dogBreed));
+/*
+const dogBreedDiv = document.getElementById('dog-breeds');
+dogBreedDiv.innerHTML = dogBreedPrinter('lab');
+
+const nuggetDiv = document.getElementById('nugget');
+nuggetDiv.innerHTML = nuggetizer('chicken');
+nuggetDiv.innerHTML += nuggetizer('duck');
+*/
+
+const printToDom = (divId, textToPrint) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML += textToPrint;
+};
+
+printToDom('dog-breeds', dogBreedPrinter('lab'));
+printToDom('nugget', nuggetizer('duck'));
+printToDom('nugget', 'mmmmmmm');
+
