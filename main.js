@@ -53,3 +53,13 @@ printToDom('dog-breeds', dogBreedPrinter('lab'));
 printToDom('nugget', nuggetizer('duck'));
 printToDom('nugget', 'mmmmmmm');
 
+let bandNumber = 1;
+const addBand = (bandName) => {
+    const bandText = `<h5>${bandNumber} ${bandName}<h5>`;
+    printToDom('band-list', bandText); 
+    bandNumber += 1;
+
+};
+
+addBand('Mettalica');
+addBand('Slayer'); 
