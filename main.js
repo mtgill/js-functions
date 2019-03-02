@@ -23,3 +23,15 @@ const nuggetizer = (animal) => {
 };
 
 console.log(nuggetizer("pig"));
+
+
+
+const dogBreedPrinter = (dogBreed) => {
+    return `My favorite dog breed is ${dogBreed}`;
+
+};
+
+console.log(dogBreedPrinter("Lab"));
+
+let dogBreed = prompt("What is your favorite dog breed?");
+console.log(dogBreedPrinter(dogBreed));
